@@ -1,0 +1,47 @@
+DEFINITION MODULE BiosDataAccess;
+
+TYPE
+        BiosDataRecord = RECORD
+                                COM1addr,
+                                COM2addr,
+                                COM3addr,
+                                COM4addr        : CARDINAL;
+                                LPT1addr,
+                                LPT2addr,
+                                LPT3addr,
+                                LPT4addr        : CARDINAL;
+                                Hardware        : CARDINAL;
+                                POSTstatus      : CHAR;
+                                BaseMemSize     : CARDINAL;
+                                Scratch1,
+                                BIOScontrol     : CHAR;
+                                KBDflags1,
+                                KBDflags2       : CHAR;
+                                KPADwspace      : CHAR;
+                                NextChar        : CARDINAL;
+                                FirstFreeSlot   : CARDINAL;
+                                KBDbuffer       : ARRAY [0..15] OF CARDINAL;
+                                DSKTrecab       : CHAR;
+                                DSKTmotor       : CHAR;
+                                DSKTturnoff     : CHAR;
+                                DSKTlastop      : CHAR;
+                                DISKstatcomm    : ARRAY [0..6] OF CHAR;
+                                VIDcurrmode     : CHAR;
+                                VIDcolumns      : CARDINAL;
+                                VIDpagesize     : CARDINAL;
+                                VIDcurrpagestart: CARDINAL;
+                                VIDcurposperpage: ARRAY [0..15] OF CARDINAL;
+                                VIDcursortype   : CARDINAL;
+                                VIDpagenumber   : CHAR;
+                                VIDcrtcontrol   : CARDINAL;
+                                VIDcurrmodeslct : CHAR;
+                                VIDcgapalette   : CHAR;
+                         END;
+
+VAR
+        BiosData : BiosDataRecord;
+
+
+
+PROCEDURE RetrieveBiosData;
+END BiosDataAccess.

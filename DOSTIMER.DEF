@@ -1,0 +1,11 @@
+DEFINITION MODULE DosTimer;
+
+    PROCEDURE Timer() : LONGCARD;
+    PROCEDURE TimerSeconds() : REAL;
+    PROCEDURE TimerWholeSeconds() : LONGCARD;
+    PROCEDURE Timer2( VAR cSeconds, cThousandths : CARDINAL);
+    PROCEDURE TicksToSeconds( lcTicks : LONGCARD) : REAL;
+    PROCEDURE TicksToWholeSeconds( lcTicks : LONGCARD) : LONGCARD;
+    PROCEDURE TicksToThousandths( lcTicks : LONGCARD) : LONGCARD;
+    END DosTimer.
+

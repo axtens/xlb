@@ -1,0 +1,11 @@
+DEFINITION MODULE Dates;
+
+PROCEDURE GetDosDate;
+PROCEDURE GetDayOfWeekNumber( VAR dayofweeknum : CARDINAL);
+PROCEDURE GetDayOfWeekName( VAR dayname : ARRAY OF CHAR);
+PROCEDURE GetDayNumber( VAR daynum : CARDINAL);
+PROCEDURE GetMonthNumber( VAR monthnum : CARDINAL);
+PROCEDURE GetMonthName( VAR monthname : ARRAY OF CHAR);
+PROCEDURE GetYearNumber( VAR yearnum : CARDINAL);
+
+END Dates.

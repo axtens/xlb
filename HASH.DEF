@@ -1,0 +1,22 @@
+DEFINITION MODULE HASH;
+
+TYPE
+    pnList = POINTER TO nList;
+    nList = RECORD
+        name : ARRAY [0..19] OF CHAR;
+        def  : ARRAY [0..254] OF CHAR;
+        next : pnList
+    END;
+
+PROCEDURE hash( s : ARRAY OF CHAR) : INTEGER;
+
+PROCEDURE lookup( s : ARRAY OF CHAR) : pnList;
+
+PROCEDURE install( sName, sDefinition :ARRAY OF CHAR): pnList;
+
+PROCEDURE remove( sName : ARRAY OF CHAR) : BOOLEAN;
+
+END HASH.
+
+
+

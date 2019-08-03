@@ -1,0 +1,11 @@
+DEFINITION MODULE COPYFILE;
+
+TYPE
+        ResponseCode = (FileNotFound, CantOpenTarget, CantWriteTarget, Successful
+);
+
+PROCEDURE CopyFile( sourcefile,
+                    destfile : ARRAY OF CHAR) : ResponseCode;
+END COPYFILE.
+
+

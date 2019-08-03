@@ -1,0 +1,7 @@
+DEFINITION MODULE READSFM;
+
+    PROCEDURE ReadSFM( sData : ARRAY OF CHAR;
+                       VAR sKey, sContent : ARRAY OF CHAR);
+    END READSFM.
+
+

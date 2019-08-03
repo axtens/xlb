@@ -1,0 +1,7 @@
+DEFINITION MODULE FINDREPL;
+
+   PROCEDURE FindRepl( cString, cFind, cRepl : ARRAY OF CHAR;
+                       VAR cResult : ARRAY OF CHAR );
+
+END FINDREPL.
+

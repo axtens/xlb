@@ -1,0 +1,17 @@
+DEFINITION MODULE ExtenDos;
+FROM SYSTEM IMPORT ADDRESS;
+CONST
+        NORMAL = 0;
+        READONLY = 1;
+        HIDDEN = 2;
+        SYSTEM = 3;
+
+PROCEDURE CreateFile( VAR BUFF : INTEGER; FILE : ARRAY OF CHAR; ATTRIB : CARDINAL; VAR RESULT : CARDINAL);
+PROCEDURE MakeHidden( VAR BUFF : INTEGER; FILE : ARRAY OF CHAR) : BOOLEAN;
+PROCEDURE ReadFileLine( handle : INTEGER;
+                    VAR Buffer : ARRAY OF CHAR;
+                    VAR BytesReceived : CARDINAL);
+
+END ExtenDos.
+
+

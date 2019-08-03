@@ -1,0 +1,7 @@
+DEFINITION MODULE INLine;
+
+    PROCEDURE InLine( VAR cFrom : CARDINAL; sTarget, sFind, sBreak : ARRAY OF CHAR; bWholeWord : BOOLEAN) : BOOLEAN;
+    PROCEDURE IsIn( sFind, sIn : ARRAY OF CHAR) : BOOLEAN;
+
+END INLine.
+

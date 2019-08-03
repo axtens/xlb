@@ -1,0 +1,10 @@
+DEFINITION MODULE XBios;
+PROCEDURE SetVideoMode( Mode : CARDINAL);
+PROCEDURE GetVideoMode(VAR ColumnsOnScreen, VideoMode, ActiveDisplayPage:CARDINAL);
+PROCEDURE SetCursorSize( StartLine, BlinkAttr, EndLine : CARDINAL);
+PROCEDURE SetCursorPosition( Row, Col, Page:CARDINAL);
+PROCEDURE GetCursorPosition( Page : CARDINAL; VAR Row, Col, StartLine, EndLine:CARDINAL);
+PROCEDURE WriteString(Mode, Attrib, Page, Row, Col : CARDINAL; Text : ARRAY OF CHAR);
+PROCEDURE TTYWrite( Char : CHAR; DispPage, ForeColour : CARDINAL);
+PROCEDURE WriteCharacters( Char : CHAR; Page,Colour,ReplicCount : CARDINAL);
+END XBios.

@@ -1,0 +1,11 @@
+DEFINITION MODULE Times;
+
+PROCEDURE GetDosTime;
+PROCEDURE GetHourNumber( VAR hournum : CARDINAL);
+PROCEDURE GetMinuteNumber( VAR minutenum : CARDINAL);
+PROCEDURE GetSecondNumber( VAR secondnum : CARDINAL);
+PROCEDURE GetHundredthNumber( VAR hundredthnum : CARDINAL);
+PROCEDURE GetNow( VAR now : ARRAY OF CHAR);
+
+END Times.
+

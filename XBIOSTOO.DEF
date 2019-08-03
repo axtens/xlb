@@ -1,0 +1,21 @@
+DEFINITION MODULE XBiosTools;
+CONST
+        INVIS= 0;
+        BLUE = 1;
+        GREEN= 2;
+        CYAN = 3;
+        RED  = 4;
+        PURPL= 5;
+        ORANG= 6;
+        WHITE= 7;
+
+        SingleLines = 0;
+        DoubleLines = 1;
+
+PROCEDURE Box( row, col, height, width, borderstyle, colour : CARDINAL);
+PROCEDURE CLS;
+PROCEDURE Centre( row : CARDINAL; Text : ARRAY OF CHAR; colour : CARDINAL);
+
+
+END XBiosTools.
+

@@ -1,0 +1,14 @@
+DEFINITION MODULE CmdQuery;
+
+TYPE
+    CMDentry = ARRAY [0..127] OF CHAR;
+    CMDproc = PROCEDURE(  CMDentry  );
+
+PROCEDURE WithCMD( ArgProc: CMDproc) : BOOLEAN;
+(*
+
+*)
+
+END CmdQuery.
+
+

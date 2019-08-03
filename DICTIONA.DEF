@@ -1,0 +1,18 @@
+DEFINITION MODULE Dictionary;
+
+	CONST nDictSize = 100;
+
+	VAR   nDictUsed : CARDINAL;
+
+	PROCEDURE SetDictDebug( lFlag : BOOLEAN);
+	PROCEDURE DictGet( n : CARDINAL; VAR cSym, cDef : ARRAY OF CHAR);
+	PROCEDURE DictCreate();
+	PROCEDURE DictInsert( cSym, cDef : ARRAY OF CHAR);
+	PROCEDURE DictRetrieve( cSym : ARRAY OF CHAR; VAR cDef : ARRAY OF CHAR);
+	PROCEDURE DictSubst( VAR cString : ARRAY OF CHAR; nSwaps : CARDINAL);
+	PROCEDURE DictSave( cFileName : ARRAY OF CHAR);
+	PROCEDURE DictLoad( cFileName : ARRAY OF CHAR);
+END Dictionary.
+
+
+

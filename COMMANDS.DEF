@@ -1,0 +1,13 @@
+DEFINITION MODULE Commands;
+
+
+	PROCEDURE Require( ) : BOOLEAN;
+	PROCEDURE GetLine( ) : BOOLEAN;
+	PROCEDURE Execute( ) : BOOLEAN;
+	PROCEDURE Process( ) : CARDINAL;
+
+
+
+END Commands.
+
+

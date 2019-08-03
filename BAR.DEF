@@ -1,0 +1,12 @@
+DEFINITION MODULE Bar;
+
+PROCEDURE InitBar(BarLen : CARDINAL; Compar : LONGCARD);
+
+PROCEDURE DisplayBar;
+
+PROCEDURE DisplayFullBar;
+
+PROCEDURE UpdateBar( count : CARDINAL);
+
+END Bar.
+

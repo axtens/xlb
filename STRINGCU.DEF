@@ -1,0 +1,7 @@
+DEFINITION MODULE StringCutter;
+
+PROCEDURE Cutter( inS : ARRAY OF CHAR; Start, End : CARDINAL; VAR outS : ARRAY OF CHAR);
+
+END StringCutter.
+
+

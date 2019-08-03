@@ -1,0 +1,8 @@
+DEFINITION MODULE MouseControl;
+
+EXPORT  Mouse, MouseInit, MouseCursorOn;
+
+PROCEDURE Mouse( VAR M1, M2, M3, M4 : CARDINAL);
+PROCEDURE MouseInit;
+PROCEDURE MouseCursorOn;
+END MouseControl.

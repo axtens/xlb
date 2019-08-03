@@ -1,0 +1,12 @@
+DEFINITION MODULE StrOut;
+(* EXPORT DispMode, DispChar, DispString, DispNL, DispRepeat,
+       DispCard, DispLongCard; *)
+VAR DispMode : (DOS, BIOS);
+PROCEDURE DispChar( C : CHAR);
+PROCEDURE DispString( P : ARRAY OF CHAR);
+PROCEDURE DispNL;
+PROCEDURE DispRepeat( N : CARDINAL; S : ARRAY OF CHAR);
+PROCEDURE DispCard( C : CARDINAL; W:CARDINAL);
+PROCEDURE DispLongCard( L : LONGCARD; W:CARDINAL);
+PROCEDURE DispLine( S : ARRAY OF CHAR);
+END StrOut.

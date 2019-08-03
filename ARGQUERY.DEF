@@ -1,0 +1,15 @@
+DEFINITION MODULE ARGQUERY;
+
+TYPE
+    ArgEntry = ARRAY [0..127] OF CHAR;
+    ArgProc = PROCEDURE(  ArgEntry  );
+
+PROCEDURE ArgQuery( pArgProc: ArgProc) : BOOLEAN;
+(*
+
+*)
+
+END ARGQUERY.
+
+
+

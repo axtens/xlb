@@ -1,0 +1,8 @@
+DEFINITION MODULE Rotor;
+
+PROCEDURE ResetRotor;
+PROCEDURE DoRotor;
+PROCEDURE SetRotorChars( sRotors : ARRAY OF CHAR );
+
+END Rotor.
+

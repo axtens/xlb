@@ -1,0 +1,7 @@
+DEFINITION MODULE SoundeXtras;
+
+(* EXPORT SoundeX; *)
+
+PROCEDURE SoundeX( VAR Src : ARRAY OF CHAR);
+
+END SoundeXtras.

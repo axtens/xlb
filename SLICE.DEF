@@ -1,0 +1,10 @@
+DEFINITION MODULE SLICE;
+VAR
+   SliceOpenQuote,
+   SliceCloseQuote : ARRAY [0..10] OF CHAR;
+   SliceDebug : BOOLEAN;
+
+PROCEDURE Slice( VAR axSource, axSlice : ARRAY OF CHAR);
+
+END SLICE.
+

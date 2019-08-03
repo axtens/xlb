@@ -1,0 +1,12 @@
+DEFINITION MODULE TRANSFER;
+
+TYPE
+        progressType = (nothing, percentage, rotor, bar);
+
+PROCEDURE Transfer( sourcefile,
+                    destfile : ARRAY OF CHAR;
+                    method : progressType) : BOOLEAN;
+
+END TRANSFER.
+
+

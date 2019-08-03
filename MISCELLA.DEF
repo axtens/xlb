@@ -1,0 +1,8 @@
+DEFINITION MODULE Miscellaneous;
+
+(* EXPORT  AlphaOnly, NumberOnly; *)
+
+PROCEDURE AlphaOnly( VAR Src : ARRAY OF CHAR);
+PROCEDURE NumberOnly( VAR Src : ARRAY OF CHAR);
+
+END Miscellaneous.

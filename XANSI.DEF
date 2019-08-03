@@ -1,0 +1,54 @@
+DEFINITION MODULE XAnsi;
+
+CONST   TOPLEFT = 0DAX;
+        TOPRIGHT = 0BFX;
+        BOTTOMLEFT = 0C0X;
+        BOTTOMRIGHT = 0D9X;
+        UPRIGHT = 0B3X;
+        LYINGDOWN = 0C4X;
+CONST
+        sa_off = 0C;
+        sa_bold = 1C;
+        sa_faint = 2C;
+        sa_italic = 3C;
+        sa_blink = 5C;
+        sa_rapid = 6C;
+        sa_reverse = 7C;
+        sa_hidden = 10C;
+        sa_f_black = 36C;
+        sa_f_red = 37C;
+        sa_f_green = 40C;
+        sa_f_yellow = 41C;
+        sa_f_blue = 42C;
+        sa_f_magenta = 43C;
+        sa_f_cyan = 44C;
+        sa_f_white = 45C;
+        sa_b_black = 50C;
+        sa_b_red = 51C;
+        sa_b_green = 52C;
+        sa_b_yellow = 53C;
+        sa_b_blue = 54C;
+        sa_b_magenta = 55C;
+        sa_b_cyan = 56C;
+        sa_b_white = 57C;
+        sa_sub = 60C;
+        sa_super = 61C;
+
+        esc = 33C;
+
+PROCEDURE MakeString( num : CARDINAL; VAR out : ARRAY OF CHAR);
+
+PROCEDURE AnsiColour( colour : CARDINAL);
+
+PROCEDURE AnsiLocate( row, col : CARDINAL);
+
+PROCEDURE AnsiScreen( background, foreground : CARDINAL);
+
+PROCEDURE AnsiEraseDisplay;
+
+PROCEDURE AnsiBox( startrow, startcol, height, width : CARDINAL);
+
+PROCEDURE AnsiCentre( line : CARDINAL; s : ARRAY OF CHAR);
+
+END XAnsi.
+

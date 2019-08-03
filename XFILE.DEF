@@ -1,0 +1,7 @@
+DEFINITION MODULE XFile;
+
+FROM FileSystem IMPORT File;
+
+PROCEDURE WriteStringToFile( VAR OutBuffer : File; OutString : ARRAY OF CHAR; cr : BOOLEAN);
+PROCEDURE ReadStringFromFile( VAR InBuffer : File; VAR InString : ARRAY OF CHAR; VAR TotalRead : CARDINAL);
+END XFile.

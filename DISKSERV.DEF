@@ -1,0 +1,11 @@
+DEFINITION MODULE DiskServices;
+PROCEDURE GetDiskFreeSpace( drive : ARRAY OF CHAR;
+                                VAR SectorsPerCluster,
+                                    AvailableClusters,
+                                    BytesPerSector,
+                                    ClustersPerDrive : CARDINAL);
+PROCEDURE CalcAllocations( SizeOfFile : LONGCARD;
+                        BytesPerCluster : CARDINAL): CARDINAL;
+
+END DiskServices.
+

@@ -1,0 +1,11 @@
+DEFINITION MODULE NewLong;
+(* EXPORT LONGC, InitLONG, IncLONG; *)
+TYPE
+    LONGC = RECORD
+                 HI : CARDINAL;
+                 LO : CARDINAL
+           END;
+
+PROCEDURE InitLONG( VAR L : LONGC);
+PROCEDURE IncLONG( VAR L : LONGC);
+END NewLong.

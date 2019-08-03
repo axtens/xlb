@@ -1,0 +1,10 @@
+DEFINITION MODULE XMem;
+(* EXPORT KeyScan; *)
+FROM SYSTEM IMPORT WORD;
+PROCEDURE Mem( Segment, Offset : CARDINAL) : CHAR;
+PROCEDURE MemW( Segment, Offset : CARDINAL) : CARDINAL;
+PROCEDURE wordMemW( Segment, Offset : WORD) : WORD;
+
+
+END XMem.
+

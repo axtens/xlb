@@ -1,0 +1,4 @@
+DEFINITION MODULE Tab;
+
+PROCEDURE PrintTab( dist : CARDINAL);
+END Tab.

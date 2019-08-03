@@ -1,0 +1,13 @@
+DEFINITION MODULE ASSERT;
+    TYPE
+        ASSERT_ERRORS = (   ASSERT_BAD, ASSERT_WORSE, ASSERT_FATAL );
+
+    PROCEDURE Assert(
+                        bAssertTest : BOOLEAN;
+                        sAssertFailMessage : ARRAY OF CHAR;
+                        eAssertErrorFlag : ASSERT_ERRORS
+                    );
+    PROCEDURE AssertionsOn();
+    PROCEDURE AssertionsOff();
+END ASSERT.
+

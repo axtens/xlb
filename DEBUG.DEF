@@ -1,0 +1,23 @@
+DEFINITION MODULE DEBUG;
+
+    VAR
+        cDebugNumWidth : CARDINAL;
+
+    PROCEDURE SetDebug( b : BOOLEAN);
+
+    PROCEDURE SetDebugEnv( sEnv, sVal : ARRAY OF CHAR);
+
+    PROCEDURE DebugS( s : ARRAY OF CHAR);
+
+    PROCEDURE DebugL( s : ARRAY OF CHAR);
+
+    PROCEDURE DebugC( c1 : CARDINAL);
+
+    PROCEDURE DebugI( i1 : INTEGER);
+
+    PROCEDURE DebugB( b1 : BOOLEAN );
+
+    PROCEDURE IsDebug() : BOOLEAN;
+
+    END DEBUG.
+
